@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (i < aboutMeText.length) {
                 aboutMeElement.innerHTML += aboutMeText.charAt(i);
                 i++;
-                setTimeout(typeWriter,30);
+                setTimeout(typeWriter,20);
             }
         }
         aboutMeElement.innerHTML = ""; // Clear text before animation
@@ -48,8 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const projects = [
         { title: "Weather Forecast App", category: "web", description: "Real-time weather using AI analytics." },
         { title: "Heritage Explorer", category: "web", description: "Interactive website for exploring India's history." },
-        { title: "AI Chatbot", category: "ai", description: "Smart chatbot trained on custom datasets." },
-        { title: "Big Data Analysis", category: "data", description: "Processing large datasets using Hadoop & Spark." },
     ];
 
     const projectContainer = document.getElementById("project-container");
